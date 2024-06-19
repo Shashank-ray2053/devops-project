@@ -1,0 +1,4 @@
+variable "az_1" {
+
+  
+}

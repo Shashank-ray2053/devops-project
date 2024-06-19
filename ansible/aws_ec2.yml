@@ -1,0 +1,10 @@
+plugin: amazon.aws.aws_ec2
+regions:
+  - us-east-1
+hostnames:
+  - instance-id
+groups:
+  Dev: "'shashank-ec2-server' in tags.Name"
+filters:
+  tag:Name: "shashank-ec2-server*"
+  instance-state-name: running
